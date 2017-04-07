@@ -8,12 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
   constructor() {
-    this.options= {
-        title: {text: 'simple chart'},
-        series: [{
-          data:[25.9, 73.4, 105, 130]
-        }],
+
+    $(document).ready(function () {
+      console.log('Application started....!!!!');
+    });
+
+    this.options = {
+      title: { text: 'simple chart' },
+      series: [{
+        data: [25.9, 73.4, 105, 130]
+      }],
     };
-}
+  }
   options: Object;
 }
